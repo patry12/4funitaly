@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>leggend</title>
+</head>
+<body>
+    <div id="sfondo">
+       <div id="logoprincipale"></div>
+    </div>
+    <div id="box_1">
+        <div id="primo">1<p id="name1">Marco.C</p></div>
+        <div id="secondo">2<p id="name2">Matteo.M</p></div>
+        <div id="terzo">3<p id="name3">Elia.M</p></div>
+        <div id="imgcircuit"></div>
+        <button id="bottonrisultati">RISULTATI</button>
+     </div>
+     <div id="imgrisultati1"></div>
+     <style>
+ body{background-color: black; margin:0px; display: flex; }
+
+ #sfondo{ border: solid 2px green none; width: 50%; height: 50%; overflow: hidden;
+ margin-left:25px; position: absolute; background-image: url(legend.png);
+ background-position: center; background-repeat: no-repeat; background-size: cover; }
+
+#logoprincipale{border: solid 2px red none ; position: absolute; width:200px; height: 150px;
+margin-left:55px; background-image: url(stemmalegend_1.png); background-position: center;
+ background-size:115%; background-repeat: no-repeat; z-index:-1; overflow: hidden; margin-top:65px;}
+ 
+ #box_1{ border: solid 2px red none ; width:45%; height:55px; overflow: hidden; 
+  position: absolute; display: flex; margin-top:400px; z-index:1;} 
+
+    #imgcircuit{border: solid 2px red none ; position: absolute; 
+ height: 50px; width:150px; margin-top:auto; margin-left:590px;
+ background-image: url(logolagunaseca.png);  background-position: center; background-size: cover;
+    background-repeat: no-repeat;}
+
+    #bottonrisultati{ border: solid 2px red ; position: absolute; border-radius: 55px;
+      color: white;  overflow: hidden; background-color: black; cursor: pointer;text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      height: 50px; width: 70px; margin-top:0px; left:500px;}
+
+      #imgrisultati1{border: solid 2px rgb(252, 2, 2); height:600px; width:780px; position: absolute; border-radius:5px;
+          margin-left:850px;margin-top:-350px; transition: 1.5s;
+         background-image: url(RISULTATILEGEND.jpg); background-repeat: no-repeat ; background-size:cover; }
+
+ #primo{ border: solid 3px gold ; width:35px; height:25px; background-color:red; 
+ border-radius: 0px 10px 0px  10px; text-align: center; color: white; 
+ font-size: 20px; font-weight: bold;}
+ #name1{ border: solid 1px greenyellow none ; overflow: hidden; width:113px; background-color: rgba(128, 123, 123, 0.267);
+ position: absolute; top:-15px; left:35px; z-index:-1;border-radius: 0px 2px 0px 2px; }
+
+ #secondo{ border: solid 3px silver; width:35px; height:25px; background-color:red; 
+ border-radius: 0px 10px 0px  10px; text-align: center; color: white; 
+ font-size: 20px; font-weight: bold; margin-left: 125px;}
+ #name2{ border: solid 1px greenyellow none; overflow: hidden; width:113px;  background-color: rgba(128, 123, 123, 0.267);
+ position: absolute; top:-15px; left:200px; z-index:-1; }
+
+ #terzo{ border: solid 3px goldenrod; width:35px; height:25px; background-color:red; 
+ border-radius: 0px 10px 0px  10px; text-align: center; color: white; 
+ font-size: 20px; font-weight: bold; margin-left: 130px;}
+ #name3{ border: solid 1px greenyellow none; overflow: hidden; width:113px;  background-color: rgba(128, 123, 123, 0.267);
+ position: absolute; top:-15px; left:355px; z-index:-1; }
+
+
+
+
+ </style>
+ <script>
+      
+    var risultati1 = document.getElementById("imgrisultati1")
+    var buttonrisultati1 = document.getElementById("bottonrisultati")
+    risultati1.style.top = "-350px"
+   
+    buttonrisultati1.onclick = function(){
+        if(risultati1.style.top == "-350px"){
+        risultati1.style.top = "400px"; 
+    }
+    else{
+        risultati1.style.top = "-350px";
+
+    }}
+
+
+ </script>
+</body>
+</html>
