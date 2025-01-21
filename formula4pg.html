@@ -6,23 +6,71 @@
     <title>formula4pg</title>
 </head>
 <body>
-    <p>RACE</p>
+    
     <a href="index.html"><botton id="botton_home">HOME</botton></a>
-    <div id="photo"><img src="RISULTATIGARAFORMULA4_13_1_25.jpg"> </div>
+    <div id="fotosfondo1">
+        <img src="/Formula-4.png" alt="fotosfondo1">
+        <img  src="/stemmaf4.png " alt="stemmaf4">
+    </div>
+
+    <div class="container">
+        <table class="ranking-table">
+        <tbody>
+       <tr>
+       <td class="numero">1</td>
+       <td class="name">Francesco.F_Maut</td><td id="imgprimo"></td>
+       </tr>
+       <tr>
+       <td class="numero">2</td>
+       <td class="name">Alessandro Piera.</td>
+      </tr>
+      <tr>
+      <td class="numero">3</td>
+      <td class="name">Elia Min.</td>                
+     </tr>
+      <tr>
+      <td class="numero">4</td>
+      <td class="name">Marco Intr.</td>
+      </tr>
+      <tr>
+      <td class="numero">5</td>
+      <td class="name">Daniele Albe.</td>
+      </tr>
+      </tbody>
+      </table>
+      </div>
+  
+   
 
     <style>
         body{
             background-color: black;
         }
-        p{color: gold; font-size: medium; font-weight: bold; position: absolute; left:15px; top:15px;}
-
+    
         #botton_home{position: absolute; left: 50%; width:70px; height: 20px; overflow: hidden; color: white; text-align: center; font-family: Georgia, 'Times New Roman', Times, serif;
                  background-color: rgb(73, 71, 71); border: solid 4px red none ;
                   border-radius: 5px; padding: 2px; text-decoration: none; font-weight: bolder; }  #botton_home:hover{color: green;}
 
-      #photo{border: solid 2px red; width:90%; height:75%; left:5px; top:50px; 
+      #fotosfondo1{border: solid 2px red none; width:35%; height:25%; left:5px; display: flex; gap:0px;
         position: absolute; overflow: hidden; }
-      img{ width:100%; height:100%; object-fit: scale-down;}
+      img{margin-left: 5px;}
+
+      .container{border:  solid 2px red none ; width: 30%; height: 250px; margin-top: 235px; position: absolute; }
+        .ranking-table{border: solid 2px gold none; height: auto; width: auto;}
+
+        .numero{border: solid 3px white; background-color: red; font-weight: bolder;
+             border-radius: 2px 10px 2px 10px;text-align: center; 
+             color: white; width: 25px; height:25px;}
+
+             .name{background-color: rgb(54, 53, 53); border-radius: 0px 5px 0px 5px; font-size: medium; font-family: 'Arial Narrow Bold', sans-serif;
+            color: white; font-weight: bolder; width: 150px; text-align: center;}
+.lap{color: white;}
+#imgprimo{background-image: url(trofeo_primo.png); background-size: 30px; background-repeat: no-repeat;
+     border: solid 3px red none; width:30px; background-position: center; }
+
+
+      
+     
 
     </style>
 </body>
