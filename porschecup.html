@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>formula4pg</title>
+    <title>porschecup</title>
 </head>
 <body>
     
     <a href="index.html"><botton id="botton_home">HOME</botton></a>
-    <div id="fotosfondo1">
-        <img src="Formula-4.png" alt="fotosfondo1">
-        <img id="stemmaf4" src="stemmaf4.png " alt="stemmaf4">
-    </div>
+    <div id="fotosfondo1"></div>
+        <div id="stemma"></div>
+        <div id="norace">NO RACE SCHEDULED</div>
+    
 
-    <div class="container">
+   <!---- <div class="container">
         <table class="ranking-table">
         <tbody>
        <tr>
@@ -38,24 +38,32 @@
       </tr>
       </tbody>
       </table>
-      </div>
+      </div> -->
   
    
 
     <style>
         body{
-            background-color: black;
-        }
+            background-color: black;}
+            #norace{border:solid 2px red  none; overflow: hidden;
+            color: yellow; font-weight: bold; position: absolute;
+             font-size: 30%; margin-top: 10%; font-size: 100px; animation: blink 1.5s linear infinite;}
+             @keyframes blink{
+                 0%{opacity: 0%;}
+                 100%{opacity: 100%;}
+             }
     
         #botton_home{position: absolute; left: 50%; width:70px; height: 20px; overflow: hidden; color: white; text-align: center; font-family: Georgia, 'Times New Roman', Times, serif;
                  background-color: rgb(73, 71, 71); border: solid 4px red none ;
                   border-radius: 5px; padding: 2px; text-decoration: none; font-weight: bolder; }  #botton_home:hover{color: green;}
 
-      #fotosfondo1{border: solid 2px red none ; width:100%; height:25%; left:5px; display: flex; gap:-10px;
-        position: absolute; overflow: hidden; }
-      img{margin-left: 5px;}
-      #stemmaf4{ border: solid 2px yellow none; position: absolute; 
-      margin-top: 0px; margin-left: 0px; width: 220px; height: 220px; margin-left: 300px; }
+      #fotosfondo1{border: solid 2px red none ; width:40%; height:30%; left:5px; display: flex; background-image: center;
+        position: absolute; overflow: hidden; background-repeat: no-repeat;
+     background-image: url(porschecup.png); background-size: 300px; }
+     
+     /* #stemma{ border: solid 2px yellow; position: absolute; background-image: url(stemmaporschecup.png);
+      margin-top: 0px;  width: 20%; height:30%; margin-left: 200px; background-size: contain;
+      background-repeat: no-repeat; background-position: center; margin-top: 60px;}*/
 
       .container{border:  solid 2px red none  ; width: 30%; height: 250px; margin-top: 235px; position: absolute; }
         .ranking-table{border: solid 2px gold none ; height: auto; width: auto;}
@@ -81,14 +89,17 @@
                 height: 29%;
                 margin-top: 150px;}
             #fotosfondo1{
-                width: 100%;
-                height: 20%;}
-                #stemmaf4{
-                    margin-left: 190px;
-                    margin-top:-5%;
-                    width: 150px;
-                    height: 150px;
-                    z-index: -1;
+                width: 340px;
+                height: 140px;
+                margin-top: 40px;
+                margin-left: 20px;}
+                #norace{
+                    margin-left: 0px;
+                    margin-top:40%;
+                    font-size: 50px;
+                    width: 85%;
+            
+            
                     
                 }
 
