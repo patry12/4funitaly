@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gt4</title>
+</head>
+<body>
+    <a id="linkbotton" href="index.html"><botton id="back">HOME</botton></a>  
+  
+    <div id="fotosfondo1"></div>
+        <div id="stemma"></div>
+        <div id="norace">NO RACE SCHEDULED</div>
+    
+
+   <!---- <div class="container">
+        <table class="ranking-table">
+        <tbody>
+       <tr>
+       <td class="numero">1</td>
+       <td class="name">Francesco.F_Maut</td><td id="imgprimo"></td>
+       </tr>
+       <tr>
+       <td class="numero">2</td>
+       <td class="name">Alessandro Piera.</td>
+      </tr>
+      <tr>
+      <td class="numero">3</td>
+      <td class="name">Elia Min.</td>                
+     </tr>
+      <tr>
+      <td class="numero">4</td>
+      <td class="name">Marco Intr.</td>
+      </tr>
+      <tr>
+      <td class="numero">5</td>
+      <td class="name">Daniele Albe.</td>
+      </tr>
+      </tbody>
+      </table>
+      </div> -->
+  
+   
+
+    <style>
+        body{
+            background-color: black;}
+            #norace{border:solid 2px red  none; overflow: hidden;
+            color: yellow; font-weight: bold; position: absolute;
+             font-size: 30%; margin-top: 10%; font-size: 100px; animation: blink 1.5s linear infinite;}
+             @keyframes blink{
+                 0%{opacity: 0%;}
+                 100%{opacity: 100%;}
+             }
+    
+             #back{position: absolute; left: 50%; width:70px; height: 20px; overflow: hidden; color: white; text-align: center;
+border: solid 3px white;
+font-family: Georgia, 'Times New Roman', Times, serif;
+background-color: rgb(0, 0, 0); border: solid 4px red none ; border-radius: 5px; 
+padding: 2px; text-decoration: none; font-weight: bolder; } #back:hover{color: red;}
+
+
+      #fotosfondo1{border: solid 2px red none ; width:40%; height:30%; left:5px; display: flex; background-image: center;
+        position: absolute; overflow: hidden; background-repeat: no-repeat;
+     background-image: url(bmwgt4.png); background-size: 300px; }
+     
+     /* #stemma{ border: solid 2px yellow; position: absolute; background-image: url(stemmaporschecup.png);
+      margin-top: 0px;  width: 20%; height:30%; margin-left: 200px; background-size: contain;
+      background-repeat: no-repeat; background-position: center; margin-top: 60px;}*/
+
+      .container{border:  solid 2px red none  ; width: 30%; height: 250px; margin-top: 235px; position: absolute; }
+        .ranking-table{border: solid 2px gold none ; height: auto; width: auto;}
+
+        .numero{border: solid 3px white; background-color: red; font-weight: bolder;
+             border-radius: 2px 10px 2px 10px;text-align: center; 
+             color: white; width: 25px; height:25px;}
+
+             .name{background-color: rgb(54, 53, 53); border-radius: 0px 5px 0px 5px; font-size: medium; font-family: 'Arial Narrow Bold', sans-serif;
+            color: white; font-weight: bolder; width: 150px; text-align: center;}
+.lap{color: white;}
+#imgprimo{background-image: url(trofeo_primo.png); background-size: 30px; background-repeat: no-repeat;
+     border: solid 3px red none ; width:30px; background-position: center; }
+
+
+      @media(max-width: 600px) {
+         .ranking-table{
+              width: 80%;
+              height:30%;
+            }
+            .container{
+                width: 100%;
+                height: 29%;
+                margin-top: 150px;}
+            #fotosfondo1{
+                width: 340px;
+                height: 140px;
+                margin-top: 40px;
+                margin-left: 20px;}
+                #norace{
+                    margin-left: 0px;
+                    margin-top:40%;
+                    font-size: 50px;
+                    width: 85%;
+            
+            
+                    
+                }
+
+            }
+            
+     
+
+    </style>
+</body>
+</html>
