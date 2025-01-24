@@ -8,7 +8,7 @@
 <body>
         
     <div id="fotosfondo1">
-        <img src="Formula-4.png" alt="fotosfondo1">
+        <img id="formula-4" src="Formula-4.png" alt="fotosfondo1">
         <img id="stemmaf4" src="stemmaf4.png " alt="stemmaf4">
     </div>
 
@@ -16,50 +16,82 @@
 
     <div class="container">
         <table class="ranking-table">
+            <caption>RACE 1 Tsukuba Full </caption>
         <tbody>
        <tr>
        <td class="numero">1</td>
-       <td class="name">Francesco.F_Maut</td><td id="imgprimo"></td>
+       <td class="name">William.S</td><td id="imgprimo"></td>
        </tr>
        <tr>
        <td class="numero">2</td>
-       <td class="name">Alessandro Piera.</td>
+       <td class="name">Ale.P</td>
       </tr>
       <tr>
       <td class="numero">3</td>
-      <td class="name">Elia Min.</td>                
+      <td class="name">Mario.P</td>                
      </tr>
-      <tr>
-      <td class="numero">4</td>
-      <td class="name">Marco Intr.</td>
-      </tr>
-      <tr>
-      <td class="numero">5</td>
-      <td class="name">Daniele Albe.</td>
-      </tr>
+     <tr>
+        <td class="ledlap"></td>
+        <td class="name">William.S</td> 
+        <td class="lap">0.52.158</td>              
+       </tr>
+      
+     <a id="risultati" href="index.html">RISULTATI COMPLETI</a>
       </tbody>
       </table>
-      </div>
-  
-   
 
+      <table class="ranking-table"  style="margin-top: 50px;">
+        <caption>RACE 2 Tsukuba Full </caption>
+        <tbody>
+       <tr>
+       <td class="numero">1</td>
+       <td class="name">Vladimiro.R</td><td id="imgprimo"></td>
+       </tr>
+       <tr>
+       <td class="numero">2</td>
+       <td class="name">William.S</td>
+      </tr>
+      <tr>
+      <td class="numero">3</td>
+      <td class="name">Marco.C</td>               
+     </tr>
+     <tr>
+        <td class="ledlap"></td>
+        <td class="name">William.S</td> 
+        <td class="lap">0.52.427</td>              
+       </tr>
+      
+
+     <a id="risultati" href="index.html" style="margin-top:205px;">RISULTATI COMPLETI</a>
+      </tbody>
+      </table>
+    </div>
+      
     <style>
         body{
-            background-color: black; }
+            background-color: black;width: 100%; height: 100%; }
  #back{position: absolute; left: 50%; width:70px; height: 20px; overflow: hidden; color: white; text-align: center;
 border: solid 3px white;
 font-family: Georgia, 'Times New Roman', Times, serif;
 background-color: rgb(0, 0, 0); border: solid 4px red none ; border-radius: 5px; 
 padding: 2px; text-decoration: none; font-weight: bolder; } #back:hover{color: red;}
     
-      #fotosfondo1{border: solid 2px red none ; width:100%; height:25%; left:5px; display: flex; gap:-10px;
+      #fotosfondo1{border: solid 2px red none; width:100%; height:35%; left:1px; display: flex; gap:-10px;
         position: absolute; overflow: hidden; }
-      img{margin-left: 5px;}
-      #stemmaf4{ border: solid 2px yellow none; position: absolute; 
-      margin-top: 0px; margin-left: 0px; width: 220px; height: 220px; margin-left: 300px; }
 
-      .container{border:  solid 2px red none  ; width: 30%; height: 250px; margin-top: 235px; position: absolute; }
-        .ranking-table{border: solid 2px gold none ; height: auto; width: auto;}
+      #formula-4{ border: solid 2px blue none  ; position: absolute; 
+      margin-top: 15px; margin-left: 1px; width: 200px; height: 200;}
+
+      #stemmaf4{ border: solid 2px yellow none ; position: absolute; 
+      margin-top: 45px; width: 120px; height: 120px; margin-left: 168px; }
+
+      .container{border:  solid 2px red none  ; width: 70%; height: 80%; overflow: hidden;
+       margin-top: 205px; position: absolute; border-collapse: collapse;}
+
+        caption{color: rgb(251, 255, 0); text-align: left; font-weight: bolder;}
+
+        .ranking-table{border: solid 2px gold none ; height: auto;
+         width: auto;}
 
         .numero{border: solid 3px white; background-color: red; font-weight: bolder;
              border-radius: 2px 10px 2px 10px;text-align: center; 
@@ -67,34 +99,27 @@ padding: 2px; text-decoration: none; font-weight: bolder; } #back:hover{color: r
 
              .name{background-color: rgb(54, 53, 53); border-radius: 0px 5px 0px 5px; font-size: medium; font-family: 'Arial Narrow Bold', sans-serif;
             color: white; font-weight: bolder; width: 150px; text-align: center;}
-.lap{color: white;}
+
 #imgprimo{background-image: url(trofeo_primo.png); background-size: 30px; background-repeat: no-repeat;
      border: solid 3px red none ; width:30px; background-position: center; }
 
 
-      @media(max-width: 600px) {
-         .ranking-table{
-              width: 80%;
-              height:30%;
-            }
-            .container{
-                width: 100%;
-                height: 29%;
-                margin-top: 150px;}
-            #fotosfondo1{
-                width: 100%;
-                height: 20%;}
-                #stemmaf4{
-                    margin-left: 190px;
-                    margin-top:-5%;
-                    width: 150px;
-                    height: 150px;
-                    z-index: -1;
-                    
-                }
+     .ledlap{background-color: rgb(240, 47, 240); border-radius:15%; animation: blink 1s infinite;}
+    .lap{ background-color: black; color: rgb(255, 51, 255);}    
 
-            }
-            
+#risultati{border: solid 2px red  none; position: absolute; margin-top:153px; 
+cursor: pointer; color: rgb(51, 255, 0); font-size: 15px; font-weight: bolder; text-decoration: none;}
+ 
+#risultati:hover{color: red;}
+     @keyframes blink{
+         0% {opacity: 1;}
+         100% {opacity: 0;}
+     }
+    
+      @media(max-width: 768px) and (max-height:844px) {
+    
+          body{ font-size: 14px;}
+      }
      
 
     </style>
