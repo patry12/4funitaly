@@ -3,91 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>leggend</title>
+    <title>legend</title>
 </head>
 <body>
-    <div id="sfondo">
-       <div id="logoprincipale"></div>
+        
+    <div id="fotosfondo1">
+        <img id="legend" src="legend.png" alt="legend">
+        <img id="stemma_legend" src="stemmalegend_1.png" alt="stemma_leggend">
     </div>
-    <div id="box_1">
-        <div id="primo">1<p id="name1">Marco.C</p></div>
-        <div id="secondo">2<p id="name2">Matteo.M</p></div>
-        <div id="terzo">3<p id="name3">Elia.M</p></div>
-        <div id="imgcircuit"></div>
-        <button id="bottonrisultati">RISULTATI</button>
-     </div>
-     <div id="imgrisultati1"></div>
-     <style>
- body{background-color: black; margin:0px; display: flex; }
 
- #sfondo{ border: solid 2px green none ; width: 50%; height: 50%; overflow: hidden;
- margin-left:25px; position: absolute; background-image: url(legend.png);
- background-position: center; background-repeat: no-repeat; background-size: cover; }
+    <a id="linkbotton" href="index.html"><botton id="back">HOME</botton></a>
 
-#logoprincipale{border: solid 2px red none ; position: absolute; width:200px; height: 150px;
-margin-left:55px; background-image: url(stemmalegend_1.png); background-position: center;
- background-size:115%; background-repeat: no-repeat; z-index:-1; overflow: hidden; margin-top:65px;}
- 
- #box_1{ border: solid 2px red none  ; width:45%; height:55px; overflow: hidden; 
-  position: absolute; display: flex; margin-top:400px; z-index:1;} 
-
-    #imgcircuit{border: solid 2px red none ; position: absolute; 
- height: 50px; width:150px; margin-top:auto; margin-left:590px;
- background-image: url(logolagunaseca.png);  background-position: center; background-size: cover;
-    background-repeat: no-repeat;}
-
-    #bottonrisultati{ border: solid 2px red  ; position: absolute; border-radius: 55px;
-      color: white;  overflow: hidden; background-color: black; cursor: pointer;text-align: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-      height: 50px; width: 70px; margin-top:0px; left:500px;}
-
-      #imgrisultati1{border: solid 2px rgb(252, 2, 2); height:600px; width:780px; position: absolute; border-radius:5px;
-          margin-left:850px;margin-top:-350px; transition: 1.5s;
-         background-image: url(RISULTATILEGEND.jpg); background-repeat: no-repeat ; background-size:cover; }
-
- #primo{ border: solid 3px gold ; width:35px; height:25px; background-color:red; 
- border-radius: 0px 10px 0px  10px; text-align: center; color: white; 
- font-size: 20px; font-weight: bold;}
- #name1{ border: solid 1px greenyellow none ; overflow: hidden; width:113px; background-color: rgba(128, 123, 123, 0.267);
- position: absolute; top:-15px; left:35px; z-index:-1;border-radius: 0px 2px 0px 2px; }
-
- #secondo{ border: solid 3px silver; width:35px; height:25px; background-color:red; 
- border-radius: 0px 10px 0px  10px; text-align: center; color: white; 
- font-size: 20px; font-weight: bold; margin-left: 125px;}
- #name2{ border: solid 1px greenyellow none; overflow: hidden; width:113px;  background-color: rgba(128, 123, 123, 0.267);
- position: absolute; top:-15px; left:200px; z-index:-1; }
-
- #terzo{ border: solid 3px goldenrod; width:35px; height:25px; background-color:red; 
- border-radius: 0px 10px 0px  10px; text-align: center; color: white; 
- font-size: 20px; font-weight: bold; margin-left: 130px;}
- #name3{ border: solid 1px greenyellow none; overflow: hidden; width:113px;  background-color: rgba(128, 123, 123, 0.267);
- position: absolute; top:-15px; left:355px; z-index:-1; }
-
- @media (max-width: 768px) {#sfondo{background-size:contain; width: 81%;} #name1{left:24px;} #secondo{margin-left:85px;} #name2{margin-left:-40px;}
- #terzo{margin-left:99px ;} #name3{margin-left:-70px;} #imgcircuit{margin-left:35px;background-size: contain; margin-top: 40px;}  
-  #bottonrisultati{margin-left: -285px; margin-top: 38px;} #imgrisultati1{margin-left:450px;}
-  #box_1{width:100%; height:13%; margin-top: 280px;}}
-
-
-
-
- </style>
- <script>
+    <div class="container">
+        <table class="ranking-table">
+            <caption>RACE </caption>
+        <tbody>
+       <tr>
+       <td class="numero">1</td>
+       <td class="name">Marco.C</td><td id="imgprimo"></td>
+       </tr>
+       <tr>
+       <td class="numero">2</td>
+       <td class="name">Matteo.M</td>
+      </tr>
+      <tr>
+      <td class="numero">3</td>
+      <td class="name">Elia.M</td>                
+     </tr>
+     <tr>
+        <td class="ledlap"></td>
+        <td class="name">////</td> 
+        <td class="lap">0.00.000</td>              
+       </tr>
       
-    var risultati1 = document.getElementById("imgrisultati1")
-    var buttonrisultati1 = document.getElementById("bottonrisultati")
-    risultati1.style.top = "-350px"
-   
-    buttonrisultati1.onclick = function(){
-        if(risultati1.style.top == "-350px"){
-        risultati1.style.top = "400px"; 
-    }
-    else{
-        risultati1.style.top = "-350px";
+     <a id="risultati" href="">RISULTATI COMPLETI</a>
+      </tbody>
+      </table>
 
-    }}
+      <table class="ranking-table"  style="margin-top: 90px;">
+        <caption>Race 1 PovertyCup Lime rock park </caption>
+        <tbody>
+       <tr>
+       <td class="numero">1</td>
+       <td class="name">Marco.C</td><td id="imgprimo"></td>
+       </tr>
+       <tr>
+       <td class="numero">2</td>
+       <td class="name">Francesco.S</td>
+      </tr>
+      <tr>
+      <td class="numero">3</td>
+      <td class="name">Renzo A.O</td>               
+     </tr>
+     <tr>
+        <td class="ledlap"></td>
+        <td class="name">Marco.C</td> 
+        <td class="lap">1:05:727</td>              
+       </tr>
+
+       <table class="ranking-table"  style="margin-top: 20px;">
+        <caption>Race 2 PovertyCup Lime rock park </caption>
+        <tbody>
+       <tr>
+       <td class="numero">1</td>
+       <td class="name">Renzo A.O</td><td id="imgprimo"></td>
+       </tr>
+       <tr>
+       <td class="numero">2</td>
+       <td class="name">Francesco.S</td>
+      </tr>
+      <tr>
+      <td class="numero">3</td>
+      <td class="name">Filippo.C</td>               
+     </tr>
+     <tr>
+        <td class="ledlap"></td>
+        <td class="name">Marco.C</td> 
+        <td class="lap">1:05:169</td>              
+       </tr>
+      
+       <a id="risultati" href="risultatilegend1.html" style="margin-top:180px;">RISULTATI COMPLETI</a>
+      </tbody>
+      </table>
+    </div>
+      
+    <style>
+        body{
+            background-color: black;width: 100%; height: 1100px; }
+ #back{position: absolute; left: 50%; width:70px; height: 20px; overflow: hidden; color: white; text-align: center;
+border: solid 3px white;
+font-family: Georgia, 'Times New Roman', Times, serif;
+background-color: rgb(0, 0, 0); border: solid 4px red none ; border-radius: 5px; 
+padding: 2px; text-decoration: none; font-weight: bolder; } #back:hover{color: red;}
+    
+      #fotosfondo1{border: solid 2px red none; width:100%; height:35%; left:1px; display: flex; gap:-10px;
+        position: absolute; overflow: hidden; }
+
+      #legend{ border: solid 2px blue none  ; position: absolute; 
+      margin-top: 15px; margin-left: 1px; width: 200px; height: 200;}
+
+      #stemma_legend{ border: solid 2px yellow none ; position: absolute; 
+      margin-top: 45px; width: 120px; height: 120px; margin-left: 168px; }
+
+      .container{border:  solid 2px red none ; width: 70%; height: 1100px; overflow: hidden;
+       margin-top: 205px; position: absolute; border-collapse: collapse;}
+
+        caption{color: rgb(251, 255, 0); text-align: left; font-weight: bolder;}
+
+        .ranking-table{border: solid 2px gold none ; height: auto;
+         width: auto;}
+
+        .numero{border: solid 3px white; background-color: red; font-weight: bolder;
+             border-radius: 2px 10px 2px 10px;text-align: center; 
+             color: white; width: 25px; height:25px;}
+
+             .name{background-color: rgb(54, 53, 53); border-radius: 0px 5px 0px 5px; font-size: medium; font-family: 'Arial Narrow Bold', sans-serif;
+            color: white; font-weight: bolder; width: 150px; text-align: center;}
+
+#imgprimo{background-image: url(trofeo_primo.png); background-size: 30px; background-repeat: no-repeat;
+     border: solid 3px red none ; width:30px; background-position: center; }
 
 
- </script>
+     .ledlap{background-color: rgb(240, 47, 240); border-radius:15%;
+        border: solid 3px white; animation: blink 1s infinite;}
+    .lap{ background-color: black; color: rgb(255, 51, 255);}    
+
+#risultati{border: solid 2px red  none; position: absolute; margin-top:153px; 
+cursor: pointer; color: rgb(51, 255, 0); font-size: 15px; font-weight: bolder; text-decoration: none;}
+ 
+#risultati:hover{color: red;}
+     @keyframes blink{
+         0% {opacity: 1;}
+         100% {opacity: 0;}
+     }
+    
+      @media(max-width: 768px) and (max-height:844px) {
+    
+          body{ font-size: 14px;}
+      }
+     
+
+    </style>
 </body>
 </html>
